@@ -1,0 +1,112 @@
+/* Basic styles for the NavBar */
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo or app name (optional) */
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4A90E2;
+  text-transform: uppercase;
+}
+
+/* Links in the NavBar */
+.NavBarLinks {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Active link styling */
+.NavBarLinks.active {
+  background-color: #4A90E2;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+/* Hover effects for links */
+.NavBarLinks:hover {
+  background-color: #555;
+  color: #4A90E2;
+  border-radius: 4px;
+}
+
+/* Styling for the user avatar and logout button */
+nav i {
+  font-size: 1.1rem;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+nav button {
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+nav button:hover {
+  background-color: #357ABD;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .NavBarLinks {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  nav i {
+    margin: 10px 0;
+  }
+
+  nav button {
+    margin-top: 10px;
+  }
+}
+
+
+
+/* .NavBarLinks {
+    display: flex;
+    flex-direction: column; /* Change to column to stack links vertically */
+    /* align-items: flex-end; /* Align items to the right */
+  /* } */
+  
+  /* .NavBarLinks {
+    color: #007bff;
+    margin: 10px 0; /* Add vertical margin for spacing */
+    /* text-decoration: none;
+    display: block; /* Make links block elements */
+  /* } */
+  
+  /* .NavBarLinks {
+    color: #333;
+    font-weight: bold; */
+  /* }  */
